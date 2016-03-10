@@ -4,6 +4,7 @@
   Import this file using the following HTML or equivalent:
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 */
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT);
 /* line 5, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -69,34 +70,43 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 10, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 13, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 17, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 .inner-wrapper {
   max-width: 960px;
   margin: 200px auto;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
+h2, h3 {
+  font-family: 'Old Standard TT', serif;
+  color: #3d6f84;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+}
+
+/* line 53, ../sass/screen.scss */
 .pants {
-  max-width: 400px;
+  max-width: 320px;
   margin: auto;
   position: relative;
 }
-/* line 35, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 .pants > .waist {
   min-height: 180px;
   position: relative;
 }
-/* line 38, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 .pants > .waist > .waist--buckle {
   width: 2%;
   display: inline-block;
@@ -106,7 +116,7 @@ html {
   position: relative;
   z-index: 20;
 }
-/* line 47, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 .pants > .waist > .belt--buckle {
   height: 60px;
   width: 60px;
@@ -115,53 +125,66 @@ html {
   left: 0;
   right: 0;
   top: -10px;
-  background-color: #FFD700;
-  background: url('/images/pn-logo.png') no-repeat center;
-  background-size: 80%;
+  background: url('/users/joshtyler/project/img/pn-logo.png?1449925319') no-repeat center;
+  background-size: 65%;
   z-index: 20;
   border-radius: 50%;
+  background-color: #FFD700;
 }
-/* line 61, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 .pants > .waist > .waist--belt {
-  width: 100%;
+  width: 97%;
   height: 30px;
   position: absolute;
   background: #fff;
   top: 5px;
   z-index: 10;
+  margin: auto;
+  left: 0;
+  right: 0;
 }
-/* line 70, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .pants > .legs--pocket {
   width: 80px;
-  min-height: 100px;
+  min-height: 40px;
   padding: 10px;
   position: absolute;
+  z-index: 20;
 }
-/* line 75, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .pants > .legs--pocket > .stitching {
   border: 1px dashed #fff;
   display: block;
+  min-height: 10px;
 }
-/* line 80, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .pants > .legs--pocket-left {
-  left: 20px;
-  top: 80px;
+  left: 5px;
+  top: 40px;
+  border: 2px solid #3d6f84;
+  border-bottom-right-radius: 50%;
 }
-/* line 84, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .pants > .legs--pocket-right {
-  right: 20px;
-  top: 80px;
+  right: 5px;
+  top: 40px;
+  border: 2px solid #3d6f84;
+  border-bottom-left-radius: 50%;
 }
-/* line 88, ../sass/screen.scss */
-.pants > .legs {
+/* line 119, ../sass/screen.scss */
+.pants .leg {
   position: absolute;
   top: 40px;
   background: #0f4a8b;
   min-height: 600px;
   width: 140px;
 }
+/* line 126, ../sass/screen.scss */
+.pants .legs--right {
+  right: 0;
+}
 
-/* line 98, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 .pants--blue {
   background: #0f4a8b;
 }

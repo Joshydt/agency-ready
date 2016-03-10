@@ -7,6 +7,25 @@
 
 @import 'compass/reset';
 
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT);
+
+
+
+// Variables ////////////////////////////////////////
+
+
+//colours
+$royalblue: #0f4a8b;
+$pantone: #3d6f84;
+$gold :#FFD700;
+
+//Measurements
+$pantwidth: 320px;
+$legheight: 600px;
+$legwidth: 140px;
+
+
+
 html {
   box-sizing: border-box;
 }
@@ -19,17 +38,20 @@ html {
 	margin: 200px auto;
 }
 
+h2, h3 {
+	font-family: 'Old Standard TT', serif;
+	color: $pantone;
+	font-size: 40px;
+	line-height: 50px;
+	text-align: center;
+}
 
-// Variables ////////////////////////////////////////
 
-$royalblue: #0f4a8b;
-$pantone: #3d6f84;
-$gold :#FFD700;
 
 
 
 .pants {
-	max-width: 400px;
+	max-width: $pantwidth;
 	margin: auto;
 	position: relative;
 	> .waist {
@@ -52,46 +74,58 @@ $gold :#FFD700;
 			left: 0;
 			right: 0;
 			top: -10px;
-			background-color: $gold;
 			background: image-url('pn-logo.png') no-repeat center;
-			background-size: 80%;
+			background-size: 65%;
 			z-index: 20;
 			border-radius: 50%;
+			background-color: $gold;
 		}
 		> .waist--belt {
-			width: 100%;
+			width: 97%;
 		    height: 30px;
 		    position: absolute;
 		    background: #fff;
 		    top: 5px;
 		    z-index: 10;
+		    margin: auto;
+		    left: 0;
+		    right: 0;
 		}
 	}
 	> .legs--pocket {
 		width: 80px;
-		min-height: 100px;
+		min-height: 40px;
 		padding: 10px;
 		position: absolute;
+		z-index: 20;
 		> .stitching {
 			border: 1px dashed #fff;
 			display: block;
+			min-height: 10px;
 		}
 	}
 	> .legs--pocket-left {
-		left: 20px;
-		top: 80px;
+		left: 5px;
+		top: 40px;
+		border: 2px solid $pantone;
+		border-bottom-right-radius: 50%;
 	}
 	> .legs--pocket-right {
-		right: 20px;
-		top: 80px;
+		right: 5px;
+		top: 40px;
+		border: 2px solid $pantone;
+		border-bottom-left-radius: 50%;
 	}
-	> .legs {
+	.leg {
 		position: absolute;
 		top: 40px;
 		background: $royalblue;
-		min-height: 600px;
-		width: 140px;
+		min-height: $legheight;
+		width: $legwidth;
 	}
+	.legs--right {
+			right: 0;
+		}
 }
 
 
